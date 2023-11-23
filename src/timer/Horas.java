@@ -7,22 +7,24 @@ import java.util.logging.Logger;
 
 public class Horas extends Thread{
     
-        static int flag;
+        static int flagh;
         
-        public Horas (int flag){
-            this.flag = flag;          
+        
+        public Horas (int flagh){
+            this.flagh = flagh;          
         }
        
         @Override
         public void run(){
-            int min = 0;
+            int hrs = 0;
             while (true){                
-                System.out.println("Cambio efectuado " + flag);            
-                if (flag == 1){                 
-                    min += 1;
-                    Timer.setmin(min);
-                    System.out.println("Incremento min....");
-                    //flag = 0;
+                System.out.println("Cambio efectuado h " + flagh);            
+                if (flagh == 1){                 
+                    hrs += 1;
+                    Timer.sethrs(hrs);
+                    System.out.println("Incremento horas....");
+                    //flag = 1;
+                    
                 }                
             }           
         }

@@ -13,11 +13,12 @@ import javax.swing.JLabel;
  */
 public class reloj extends javax.swing.JFrame {
 
-   
+   //normal
     public reloj() {
         initComponents();
     }
 
+    
     public void setMin(int _min) {
         this.min.setText(Integer.toString(_min));
     }
@@ -25,7 +26,9 @@ public class reloj extends javax.swing.JFrame {
     public void setSec(int _sec) {
         this.sec.setText(Integer.toString(_sec));
     }
-    public void sehHours(Integer.toString(I, _hou),)
+    public void setHrs(int _hrs) {
+        this.sec.setText(Integer.toString(_hrs));
+    }
 
     
     @SuppressWarnings("unchecked")

@@ -9,10 +9,11 @@ public class segundos extends Thread{
 
         @Override
         public void run(){
-            for (int i = 0; i < 60; i++) {     
+            for (int i = 0; i < 60; i++) {
+                //Hace que el numero aumente en la vista
                 Timer.setsec(i);
                 try {
-                    segundos.sleep(10);
+                    segundos.sleep(5);
                     
                 } catch (InterruptedException ex) {
                     Logger.getLogger(segundos.class.getName()).log(Level.SEVERE, null, ex);
